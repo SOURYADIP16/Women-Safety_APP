@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="#FFFF8D">
+
+    <ImageView
+        android:id="@+id/hello"
+        android:layout_width="324dp"
+        android:layout_height="343dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/hello"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="\t\t\t\t\t\tFeel Safe Everywhere \n I’ll always be there for you."
+        android:fontFamily="@font/varela_round"
+        android:textSize="28sp"
+        android:layout_below="@id/hello"
+        app:layout_constraintTop_toBottomOf="@id/hello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
